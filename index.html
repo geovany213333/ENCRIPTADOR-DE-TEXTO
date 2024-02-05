@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Pacifico&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <img src="1alura.png" alt="" class="logo">
+            <h1>ENCRIPTADOR DE TEXTO <em class="highlight">SPACE</em></h1>
+        </header>
+        <main>
+            <section class="primera">
+                <textarea class="input-texto" cols="40" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+                <div class="botones">
+                    <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="mensaje-box">
+                <textarea class="mensaje" cols="40" rows="15" placeholder="No se encontró texto. Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                <div class="boton-copiar">
+                    <button class="copiar" onclick="copiar()">Copiar</button> 
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="pie">
+                <p>© Copyright 2024 desarrollado por Marlon Garcia</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
